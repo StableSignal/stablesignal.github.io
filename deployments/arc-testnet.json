@@ -1,1 +1,13 @@
-{"network":"Arc Testnet","chainId":5042002,"contracts":{}}
+{
+  "network": "Arc Testnet",
+  "chainId": 5042002,
+  "disclaimer": "StableSignal is an independent project building on Arc testnet. We are not affiliated with, endorsed by, or sponsored by Circle or Arc.",
+  "contracts": {
+    "PulseBeacon": {
+      "status": "not_deployed",
+      "address": null,
+      "deploymentTransactionHash": null,
+      "explorerUrl": null
+    }
+  }
+}
