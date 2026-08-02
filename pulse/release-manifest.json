@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "application": "@stablesignal/pulse",
+  "publicBase": "/pulse/",
+  "algorithm": "sha256",
+  "files": [
+    {
+      "path": "assets/ccip-B91kC8J2.js",
+      "bytes": 2863,
+      "sha256": "6563fbc3fa19629ca6f44612f3987d4a08ceb3f1529f37d6cb1130ec2e146d7f"
+    },
+    {
+      "path": "assets/index-BqpRdnOX.js",
+      "bytes": 128866,
+      "sha256": "33277e2046c2ea6a03c19f2a64e2cc8890be93212f54421e8e1b88f92efbdf68"
+    },
+    {
+      "path": "assets/index-sJDBRAoM.css",
+      "bytes": 7119,
+      "sha256": "33661da0ce553af250fc8f298d214c3233f0ce632c819b01cd5e2d88ec561c54"
+    },
+    {
+      "path": "assets/localBatchGatewayRequest-DlCigo_h.js",
+      "bytes": 106093,
+      "sha256": "692124175942fac57671c7fe983422768e712b3269efb49285122211e59e2254"
+    },
+    {
+      "path": "assets/secp256k1-BNHPt8Gq.js",
+      "bytes": 30036,
+      "sha256": "9dc7f55d72f551593d28e7fbef13c87021566d91f0f9e85da1dd022a9237c4bd"
+    },
+    {
+      "path": "assets/utils-Bpv4vmSW.js",
+      "bytes": 2194,
+      "sha256": "5114638bb111b647e478a947be5beed5558487685dc8284144566df3fc03d851"
+    },
+    {
+      "path": "index.html",
+      "bytes": 1804,
+      "sha256": "e5e28b752b2343e5fbd009f13cedfd3079bfe275ec7df136e686217811bfdffb"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Pulse is StableSignal's public-beta Arc testnet activity dashboard and research interface.">
+  <meta name="theme-color" content="#0b0e11">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pulse — Arc testnet activity, made inspectable">
+  <meta property="og:description" content="Inspect recent blocks, transactions, gas use, wallets, and contracts on Arc testnet.">
+  <meta property="og:url" content="https://stablesignal.github.io/products/pulse.html">
+  <meta property="og:image" content="https://stablesignal.github.io/assets/brand/stablesignal-pulse-og-v1.png">
+  <meta property="og:image:width" content="1746">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="StableSignal Pulse public beta — Arc testnet, in view.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://stablesignal.github.io/assets/brand/stablesignal-pulse-og-v1.png">
+  <meta name="twitter:image:alt" content="StableSignal Pulse public beta — Arc testnet, in view.">
+  <title>Pulse — StableSignal</title>
+  <link rel="canonical" href="https://stablesignal.github.io/products/pulse.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="subpage">
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <a class="brand" href="../"><span class="mark" aria-hidden="true">▥</span>StableSignal</a>
+  <nav aria-label="Primary">
+    <a href="../#products">Products</a>
+    <a href="../#proof">Proof</a>
+    <a href="../#research">Research</a>
+    <a href="../#build-log">Build log</a>
+    <a class="nav-cta" href="../pulse/">Open Pulse</a>
+  </nav>
+</header>
+<main id="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">StableSignal</a><span aria-hidden="true">/</span><span>Pulse</span></nav>
+
+  <section class="product-hero">
+    <div>
+      <p class="eyebrow"><span></span> Product 01 · Public beta</p>
+      <h1>Arc testnet activity, made inspectable.</h1>
+      <p class="lede">Pulse is a live network activity dashboard and research interface for following recent blocks, transactions, gas use, wallets, and contracts.</p>
+      <div class="actions">
+        <a class="button primary" href="../pulse/">Open Pulse</a>
+        <a class="button" href="#scope">Review scope</a>
+      </div>
+    </div>
+    <aside class="scope">
+      <div class="scope-head"><span>Release context</span><b>TESTNET</b></div>
+      <dl>
+        <div><dt>Status</dt><dd>Public beta</dd></div>
+        <div><dt>Network</dt><dd>Arc Testnet</dd></div>
+        <div><dt>Chain ID</dt><dd><code>5042002</code></dd></div>
+        <div><dt>Data source</dt><dd>Public RPC</dd></div>
+      </dl>
+      <p class="micro">Pulse is a research interface, not a wallet, custody service, transaction signer, or production uptime monitor.</p>
+    </aside>
+  </section>
+
+  <section class="status-strip" aria-label="Pulse public beta status">
+    <div><span>Interface</span><strong>Interactive</strong></div>
+    <div><span>Evidence</span><strong>Checkpointed</strong></div>
+    <div><span>Method</span><strong>Documented</strong></div>
+    <div><span>Environment</span><strong>Testnet only</strong></div>
+  </section>
+
+  <section class="section compact" id="scope">
+    <div class="heading"><div><p class="eyebrow">Public-beta scope</p><h2>A narrow, verifiable network view.</h2></div><p>The interface prioritizes direct observation and independent follow-through over broad analytics claims.</p></div>
+    <div class="feature-grid">
+      <article><i>01</i><h3>Recent activity</h3><p>Inspect current Arc testnet blocks, transaction counts, gas-use context, and a recent transaction feed.</p></article>
+      <article><i>02</i><h3>Address lookup</h3><p>Enter a wallet address to review its public testnet balance and follow the record into ArcScan.</p></article>
+      <article><i>03</i><h3>Contract lookup</h3><p>Check whether an address contains runtime bytecode and open the corresponding explorer record.</p></article>
+      <article><i>04</i><h3>Evidence trail</h3><p>Connect the product surface to dated captures, reproducible research, and deployed testnet records.</p></article>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="heading"><div><p class="eyebrow">Release surface</p><h2>What the beta looks like.</h2></div><p>The dated v0 capture preserves the reviewed baseline. The live interface may show newer network values.</p></div>
+    <figure class="product-shot">
+      <a href="../assets/screenshots/pulse-v0-2026-07-31.png"><img src="../assets/screenshots/pulse-v0-2026-07-31.png" alt="Pulse dashboard showing Arc testnet blocks, transaction activity, and address lookup tools"></a>
+      <figcaption>Pulse v0 release-candidate capture · 31 July 2026 · Arc testnet</figcaption>
+    </figure>
+  </section>
+
+  <section class="section compact">
+    <div class="heading"><div><p class="eyebrow">Research standard</p><h2>Observation, calculation, interpretation.</h2></div><p>Pulse keeps these three layers distinct so each claim can be assessed on its own.</p></div>
+    <div class="method-grid">
+      <article><span>OBSERVED DATA</span><p>Values returned by the configured Arc testnet RPC at a recorded time.</p></article>
+      <article><span>DERIVED METRICS</span><p>Calculations such as transaction totals and gas-utilization ratios, using published definitions.</p></article>
+      <article><span>INTERPRETATION</span><p>Clearly labeled research notes that do not overstate a short testnet sample.</p></article>
+    </div>
+    <div class="text-links">
+      <a href="https://github.com/StableSignal/public-research/blob/main/methodology/pulse-v0-methodology.md" target="_blank" rel="noopener noreferrer">Read the methodology ↗</a>
+      <a href="https://github.com/StableSignal/public-research/blob/main/notes/0001-arc-testnet-observations.md" target="_blank" rel="noopener noreferrer">Review Observation 0001 ↗</a>
+      <a href="https://testnet.arcscan.app/tx/0xe097a6ec452a215f6733751149f412928022547da95b554c1252e1504c3e99ae" target="_blank" rel="noopener noreferrer">Verify the snapshot checkpoint ↗</a>
+      <a href="../deployments/arc-testnet.json">Open the deployment registry →</a>
+    </div>
+  </section>
+
+  <section class="section compact">
+    <div class="heading"><div><p class="eyebrow">Known limits</p><h2>Public beta, with explicit boundaries.</h2></div><p>Pulse reports a current testnet view. It does not represent mainnet conditions or production availability.</p></div>
+    <div class="limits">
+      <p>RPC availability, short-lived reorganizations, test activity, and the selected observation window can affect what is displayed.</p>
+      <p>Pulse is not a finality oracle, indexer, risk score, wallet, custody service, transaction signer, or source of financial advice.</p>
+      <p>Arc and Circle are referenced only as third-party network and ecosystem context. StableSignal is independent and is not affiliated with, endorsed by, or sponsored by Circle or Arc.</p>
+    </div>
+  </section>
+
+  <section class="page-cta">
+    <div><p class="eyebrow">Pulse public beta</p><h2>Inspect the testnet directly.</h2><p>Use the live interface, then follow any displayed record to its public explorer source.</p></div>
+    <a class="button primary" href="../pulse/">Open Pulse</a>
+  </section>
+</main>
+<footer>
+  <div><a class="brand" href="../"><span class="mark" aria-hidden="true">▥</span>StableSignal</a><p>Stablecoin research, analytics, and migration tools.</p><p><a href="https://github.com/StableSignal/public-research" target="_blank" rel="noopener noreferrer">Public research</a> · <a href="../build-log/0002-pulse-public-beta.html">Latest build log</a></p></div>
+  <div><strong>Independence disclaimer</strong><p>StableSignal is an independent project building on Arc testnet. We are not affiliated with, endorsed by, or sponsored by Circle or Arc.</p><p>© 2026 StableSignal · Testnet research only</p></div>
+</footer>
+</body>
+</html>
