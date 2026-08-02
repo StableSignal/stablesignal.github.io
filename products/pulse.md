@@ -1,10 +1,12 @@
 # Pulse
 
-**Status:** Release evidence verified on Arc testnet
+**Status:** Public beta on Arc testnet; first snapshot checkpoint published
 
 **Network:** Arc Testnet (`5042002`)
 
-Pulse is an Arc testnet activity dashboard and research interface. Pulse v0 is intended to make a small set of current network observations easy to inspect and independently follow into block and transaction records.
+Pulse is an Arc testnet activity dashboard and research interface. The public beta makes a small set of current network observations easy to inspect and independently follow into block and transaction records.
+
+The primary public scope is the formatted [`pulse.html`](pulse.html) page. This Markdown record remains available for repository review.
 
 ## Pulse v0 scope
 
@@ -31,12 +33,13 @@ See the [Pulse v0 methodology](https://github.com/StableSignal/public-research/b
 
 ## Public evidence gate
 
-Pulse v0 is not marked released until the following items agree:
+Pulse v0 was not advanced to public beta until the following items agreed:
 
 * a dated release-candidate screenshot;
 * the recorded network and capture window;
 * a verified PulseBeacon contract address;
-* its successful deployment transaction and ArcScan testnet URL; and
+* its successful deployment transaction and ArcScan testnet URL;
+* the successful PulseBeacon checkpoint for the commit-pinned Observation 0001 snapshot; and
 * the machine-readable [deployment registry](../deployments/arc-testnet.json).
 
 Those records now agree for the verified Arc testnet PulseBeacon deployment at [`0x13FBc37C40d071d9654913013C93a63F9Dc770D3`](https://testnet.arcscan.app/address/0x13FBc37C40d071d9654913013C93a63F9Dc770D3).

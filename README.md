@@ -6,7 +6,16 @@ StableSignal is an independent project building on Arc testnet. We are not affil
 
 ## Architecture
 
-Plain HTML and CSS with no build step, backend, database, analytics, external assets, or paid infrastructure.
+The public hub uses plain HTML and CSS with no backend, database, analytics, external assets, or paid infrastructure. The compiled Pulse frontend is served from `pulse/` as static files alongside the hub.
+
+Primary routes:
+
+* `/` — StableSignal hub;
+* `/pulse/` — interactive Pulse public beta;
+* `/products/pulse.html` — formatted Pulse scope and limitations; and
+* `/build-log/0002-pulse-public-beta.html` — public-beta release record.
+
+External links in HTML must use `target="_blank"` with `rel="noopener noreferrer"`. Internal navigation stays in the current tab.
 
 ## Run locally
 
@@ -31,9 +40,9 @@ Then visit `http://localhost:8000`.
 
 1. Put the approved, dated Pulse screenshot in `assets/screenshots/`.
 2. Populate `deployments/arc-testnet.json` from the verified deployment receipt. Confirm chain ID `5042002`, successful receipt status, the resulting checksummed address, runtime code, block number, UTC time, and ArcScan testnet URL.
-3. Copy the same values into the proof, contract-registry, and build-log sections in `index.html` and into `build-log/0001-setup-and-pulse-v0.md`.
+3. Copy the same values into the proof, contract-registry, and build-log sections in `index.html` and the applicable build-log record.
 4. Populate the release window and metrics in `public-research/notes/0001-arc-testnet-observations.md` from the approved QA capture.
-5. Parse the JSON, confirm every local and external link, and search for `Pending`, `Awaiting`, and `null` before publication. Every remaining occurrence must be intentional.
+5. Parse the JSON, confirm every local and external link, confirm external HTML links have safe new-tab attributes, and search for `Pending`, `Awaiting`, and `null` before publication. Every remaining occurrence must be intentional.
 6. Retain the testnet and independence disclaimers beside Arc context and in the footer.
 
 The machine-readable deployment registry is the source of truth for contract evidence. The hub and build log are human-readable copies and must match it exactly.

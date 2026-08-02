@@ -30,6 +30,19 @@
         "publisherMatchedDeployer": true,
         "explorerIndexed": true,
         "recordedAtUtc": "2026-08-02T18:38:34Z"
+      },
+      "checkpoints": {
+        "observation0001": {
+          "status": "published",
+          "digestAlgorithm": "sha256",
+          "digest": "0xbeae9dc6916516bd71591dfc2038e013a6a715f3b5ff0fc05e40eb943b71c00d",
+          "uri": "https://raw.githubusercontent.com/StableSignal/public-research/b2467a2e0008941c9dd1370426f9c6a886415d63/snapshots/pulse-v0-2026-07-31.json",
+          "transactionHash": "0xe097a6ec452a215f6733751149f412928022547da95b554c1252e1504c3e99ae",
+          "blockNumber": 54994297,
+          "blockHash": "0x5b2992cc4587b1cbbf217962bd357aba43ac50bf12626b91df0d6cd71b1d5375",
+          "publishedAtUtc": "2026-08-02T21:10:55Z",
+          "explorerUrl": "https://testnet.arcscan.app/tx/0xe097a6ec452a215f6733751149f412928022547da95b554c1252e1504c3e99ae"
+        }
       }
     }
   }
