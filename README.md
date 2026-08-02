@@ -29,10 +29,13 @@ Then visit `http://localhost:8000`.
 
 ## Updating public proof
 
-1. Put verified screenshots in `assets/screenshots/`.
-2. Update the proof, deployed-contracts, and build-log sections in `index.html`.
-3. Add the verified address, transaction hash, and ArcScan URL to `deployments/arc-testnet.json`.
-4. Replace matching placeholders in `build-log/0001-setup-and-pulse-v0.md`.
-5. Confirm every link and retain the independence disclaimer beside Arc context and in the footer.
+1. Put the approved, dated Pulse screenshot in `assets/screenshots/`.
+2. Populate `deployments/arc-testnet.json` from the verified deployment receipt. Confirm chain ID `5042002`, successful receipt status, the resulting checksummed address, runtime code, block number, UTC time, and ArcScan testnet URL.
+3. Copy the same values into the proof, contract-registry, and build-log sections in `index.html` and into `build-log/0001-setup-and-pulse-v0.md`.
+4. Populate the release window and metrics in `public-research/notes/0001-arc-testnet-observations.md` from the approved QA capture.
+5. Parse the JSON, confirm every local and external link, and search for `Pending`, `Awaiting`, and `null` before publication. Every remaining occurrence must be intentional.
+6. Retain the testnet and independence disclaimers beside Arc context and in the footer.
+
+The machine-readable deployment registry is the source of truth for contract evidence. The hub and build log are human-readable copies and must match it exactly.
 
 Never publish keys, seed phrases, `.env` files, private implementation details, internal notes, or personal information.
