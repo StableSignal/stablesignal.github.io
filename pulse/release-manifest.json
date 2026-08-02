@@ -10,9 +10,9 @@
       "sha256": "6563fbc3fa19629ca6f44612f3987d4a08ceb3f1529f37d6cb1130ec2e146d7f"
     },
     {
-      "path": "assets/index-BqpRdnOX.js",
-      "bytes": 128866,
-      "sha256": "33277e2046c2ea6a03c19f2a64e2cc8890be93212f54421e8e1b88f92efbdf68"
+      "path": "assets/index-CzI48eIu.js",
+      "bytes": 129121,
+      "sha256": "dec314d9a420e0acc2097a52c3c83604693bd1d5f68da2a13955a7af93724366"
     },
     {
       "path": "assets/index-sJDBRAoM.css",
@@ -36,8 +36,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 1804,
-      "sha256": "e5e28b752b2343e5fbd009f13cedfd3079bfe275ec7df136e686217811bfdffb"
+      "bytes": 1805,
+      "sha256": "f6175b7602f0667776c8ea04355ea9169c9eba81cb743c923e883cb5882d43f2"
     }
   ]
 }
