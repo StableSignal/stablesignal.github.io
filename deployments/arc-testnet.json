@@ -1,13 +1,36 @@
 {
-  "network": "Arc Testnet",
-  "chainId": 5042002,
+  "schemaVersion": 1,
+  "network": {
+    "name": "Arc Testnet",
+    "chainId": 5042002,
+    "environment": "testnet"
+  },
+  "lastUpdated": "2026-08-02",
   "disclaimer": "StableSignal is an independent project building on Arc testnet. We are not affiliated with, endorsed by, or sponsored by Circle or Arc.",
   "contracts": {
     "PulseBeacon": {
-      "status": "not_deployed",
-      "address": null,
-      "deploymentTransactionHash": null,
-      "explorerUrl": null
+      "status": "verified",
+      "address": "0x13FBc37C40d071d9654913013C93a63F9Dc770D3",
+      "deploymentTransactionHash": "0x34294c78a7062f1088724d2017149d2531c6a522c666304c09e950694338ebf0",
+      "deploymentBlockNumber": 54976300,
+      "deploymentBlockHash": "0x30b30a29575517a5e63312735aa5820fc4cefd2f138ab96551b4c4ed3b845292",
+      "deployedAtUtc": "2026-08-02T18:37:09Z",
+      "deployer": "0x95BBab0a10a247f46716081A6311fbf8345AbCE2",
+      "publisher": "0x95BBab0a10a247f46716081A6311fbf8345AbCE2",
+      "gasUsed": 272439,
+      "effectiveGasPriceWei": "22042400000",
+      "deploymentFeeUsdc": "0.0060052094136",
+      "runtimeCodeBytes": 1014,
+      "explorerUrl": "https://testnet.arcscan.app/tx/0x34294c78a7062f1088724d2017149d2531c6a522c666304c09e950694338ebf0",
+      "contractExplorerUrl": "https://testnet.arcscan.app/address/0x13FBc37C40d071d9654913013C93a63F9Dc770D3",
+      "verification": {
+        "chainIdMatched": true,
+        "transactionReceiptStatus": 1,
+        "runtimeCodePresent": true,
+        "publisherMatchedDeployer": true,
+        "explorerIndexed": true,
+        "recordedAtUtc": "2026-08-02T18:38:34Z"
+      }
     }
   }
 }
