@@ -4,7 +4,7 @@
 
 **Network:** Arc Testnet (`5042002`)
 
-Pulse is an Arc testnet activity dashboard and research interface. The public beta makes a small set of current network observations easy to inspect and independently follow into block and transaction records.
+Pulse is an Arc testnet activity dashboard and research interface. The public beta makes a small, automatically refreshed network snapshot easy to inspect and independently follow into block and transaction records.
 
 The primary public scope is the formatted [`pulse.html`](pulse.html) page. This Markdown record remains available for repository review.
 
@@ -15,8 +15,8 @@ The release candidate covers:
 * recent blocks and transaction counts;
 * gas-use context for displayed blocks;
 * a recent transaction feed;
-* wallet-address lookup;
-* contract-address lookup; and
+* validated wallet-address handoff to ArcScan;
+* validated contract-address handoff to ArcScan; and
 * outbound ArcScan references for independent inspection.
 
 The [approved QA capture](../assets/screenshots/pulse-v0-2026-07-31.png) defines the visible release-candidate surface. Features not present in that capture are not represented as part of v0.
@@ -46,6 +46,6 @@ Those records now agree for the verified Arc testnet PulseBeacon deployment at [
 
 ## Limitations
 
-Pulse v0 is a point-in-time testnet research view. It is not a finality oracle, indexer, production uptime monitor, risk score, wallet, custody service, or transaction signer. RPC availability, short-lived reorganization, test activity, and the selected observation window can all affect what is displayed.
+Pulse v0 is a recent, published testnet research view refreshed on a schedule. It is not a finality oracle, indexer, production uptime monitor, risk score, wallet, custody service, or transaction signer. Capture availability, scheduled-workflow delays, short-lived reorganization, test activity, and the selected observation window can all affect what is displayed.
 
 StableSignal is an independent project building on Arc testnet. We are not affiliated with, endorsed by, or sponsored by Circle or Arc.

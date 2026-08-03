@@ -1,0 +1,50 @@
+name: Deploy StableSignal Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out public site
+        uses: actions/checkout@v4
+      - name: Check out public capture tool
+        uses: actions/checkout@v4
+        with:
+          repository: StableSignal/public-research
+          path: .pulse-research
+      - name: Use Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Capture latest Arc testnet window
+        run: node .pulse-research/tools/capture-pulse-snapshot.mjs --output pulse/latest.json
+      - name: Remove capture-tool checkout
+        run: rm -rf "$GITHUB_WORKSPACE/.pulse-research"
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Package site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
