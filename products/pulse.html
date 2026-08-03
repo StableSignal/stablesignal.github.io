@@ -39,7 +39,7 @@
     <div>
       <p class="eyebrow"><span></span> Product 01 · Public beta</p>
       <h1>Arc testnet activity, made inspectable.</h1>
-      <p class="lede">Pulse is a live network activity dashboard and research interface for following recent blocks, transactions, gas use, wallets, and contracts.</p>
+      <p class="lede">Pulse is an automatically refreshed network snapshot and research interface for following recent Arc testnet blocks, transactions, gas use, wallets, and contracts.</p>
       <div class="actions">
         <a class="button primary" href="../pulse/">Open Pulse</a>
         <a class="button" href="#scope">Review scope</a>
@@ -51,7 +51,7 @@
         <div><dt>Status</dt><dd>Public beta</dd></div>
         <div><dt>Network</dt><dd>Arc Testnet</dd></div>
         <div><dt>Chain ID</dt><dd><code>5042002</code></dd></div>
-        <div><dt>Data source</dt><dd>Public RPC</dd></div>
+        <div><dt>Data source</dt><dd>Published snapshot</dd></div>
       </dl>
       <p class="micro">Pulse is a research interface, not a wallet, custody service, transaction signer, or production uptime monitor.</p>
     </aside>
@@ -65,17 +65,17 @@
   </section>
 
   <section class="section compact" id="scope">
-    <div class="heading"><div><p class="eyebrow">Public-beta scope</p><h2>A narrow, verifiable network view.</h2></div><p>The interface prioritizes direct observation and independent follow-through over broad analytics claims.</p></div>
+    <div class="heading"><div><p class="eyebrow">Public-beta scope</p><h2>A narrow, verifiable network view.</h2></div><p>The interface prioritizes reproducible observation and independent follow-through over broad analytics claims.</p></div>
     <div class="feature-grid">
-      <article><i>01</i><h3>Recent activity</h3><p>Inspect current Arc testnet blocks, transaction counts, gas-use context, and a recent transaction feed.</p></article>
-      <article><i>02</i><h3>Address lookup</h3><p>Enter a wallet address to review its public testnet balance and follow the record into ArcScan.</p></article>
-      <article><i>03</i><h3>Contract lookup</h3><p>Check whether an address contains runtime bytecode and open the corresponding explorer record.</p></article>
+      <article><i>01</i><h3>Recent activity</h3><p>Inspect the latest published Arc testnet blocks, transaction counts, gas-use context, and a recent transaction feed.</p></article>
+      <article><i>02</i><h3>Address lookup</h3><p>Validate a wallet address and follow its public testnet record into ArcScan.</p></article>
+      <article><i>03</i><h3>Contract lookup</h3><p>Validate a contract address and open the corresponding ArcScan record.</p></article>
       <article><i>04</i><h3>Evidence trail</h3><p>Connect the product surface to dated captures, reproducible research, and deployed testnet records.</p></article>
     </div>
   </section>
 
   <section class="section compact">
-    <div class="heading"><div><p class="eyebrow">Release surface</p><h2>What the beta looks like.</h2></div><p>The dated v0 capture preserves the reviewed baseline. The live interface may show newer network values.</p></div>
+    <div class="heading"><div><p class="eyebrow">Release surface</p><h2>What the beta looks like.</h2></div><p>The dated v0 capture preserves the reviewed baseline. The published interface is scheduled to show a newer 20-block snapshot every 15 minutes.</p></div>
     <figure class="product-shot">
       <a href="../assets/screenshots/pulse-v0-2026-07-31.png"><img src="../assets/screenshots/pulse-v0-2026-07-31.png" alt="Pulse dashboard showing Arc testnet blocks, transaction activity, and address lookup tools"></a>
       <figcaption>Pulse v0 release-candidate capture · 31 July 2026 · Arc testnet</figcaption>
@@ -98,7 +98,7 @@
   </section>
 
   <section class="section compact">
-    <div class="heading"><div><p class="eyebrow">Known limits</p><h2>Public beta, with explicit boundaries.</h2></div><p>Pulse reports a current testnet view. It does not represent mainnet conditions or production availability.</p></div>
+    <div class="heading"><div><p class="eyebrow">Known limits</p><h2>Public beta, with explicit boundaries.</h2></div><p>Pulse reports a recent published testnet view. It does not represent mainnet conditions or production availability.</p></div>
     <div class="limits">
       <p>RPC availability, short-lived reorganizations, test activity, and the selected observation window can affect what is displayed.</p>
       <p>Pulse is not a finality oracle, indexer, risk score, wallet, custody service, transaction signer, or source of financial advice.</p>
@@ -107,7 +107,7 @@
   </section>
 
   <section class="page-cta">
-    <div><p class="eyebrow">Pulse public beta</p><h2>Inspect the testnet directly.</h2><p>Use the live interface, then follow any displayed record to its public explorer source.</p></div>
+    <div><p class="eyebrow">Pulse public beta</p><h2>Inspect the latest published view.</h2><p>Use the snapshot interface, then follow any displayed record to its public explorer source.</p></div>
     <a class="button primary" href="../pulse/">Open Pulse</a>
   </section>
 </main>

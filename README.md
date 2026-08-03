@@ -6,7 +6,7 @@ StableSignal is an independent project building on Arc testnet. We are not affil
 
 ## Architecture
 
-The public hub uses plain HTML and CSS with no backend, database, analytics, external assets, or paid infrastructure. The compiled Pulse frontend is served from `pulse/` as static files alongside the hub.
+The public hub uses plain HTML and CSS with no application backend, database, analytics, external assets, or paid infrastructure. The compiled Pulse frontend is served from `pulse/` as static files alongside the hub. A scheduled GitHub Pages workflow captures a 20-block Arc testnet snapshot server-side and replaces `pulse/latest.json` in the deployed artifact every 15 minutes; a failed capture leaves the prior successful deployment online.
 
 Primary routes:
 
@@ -30,9 +30,9 @@ Then visit `http://localhost:8000`.
 ## Publish with GitHub Pages
 
 1. Open **Settings → Pages** in this repository.
-2. Under **Build and deployment**, select **Deploy from a branch**.
-3. Choose `main` and `/ (root)`, then save.
-4. Verify `https://stablesignal.github.io/`.
+2. Under **Build and deployment**, select **GitHub Actions**.
+3. Run the **Deploy StableSignal Pages** workflow or push to `main`.
+4. Verify `https://stablesignal.github.io/` and confirm `pulse/latest.json` has a recent UTC head-block timestamp.
 
 `.nojekyll` ensures the files are served directly. This repository intentionally has no `CNAME`.
 
