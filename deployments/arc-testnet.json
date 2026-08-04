@@ -5,7 +5,7 @@
     "chainId": 5042002,
     "environment": "testnet"
   },
-  "lastUpdated": "2026-08-02",
+  "lastUpdated": "2026-08-04",
   "disclaimer": "StableSignal is an independent project building on Arc testnet. We are not affiliated with, endorsed by, or sponsored by Circle or Arc.",
   "contracts": {
     "PulseBeacon": {
@@ -42,6 +42,17 @@
           "blockHash": "0x5b2992cc4587b1cbbf217962bd357aba43ac50bf12626b91df0d6cd71b1d5375",
           "publishedAtUtc": "2026-08-02T21:10:55Z",
           "explorerUrl": "https://testnet.arcscan.app/tx/0xe097a6ec452a215f6733751149f412928022547da95b554c1252e1504c3e99ae"
+        },
+        "observation0002": {
+          "status": "published",
+          "digestAlgorithm": "sha256",
+          "digest": "0x557d4dfb5fe1eb921e2322835a4b7d7100cf39144d82a04aa6c895df4f021d56",
+          "uri": "https://raw.githubusercontent.com/StableSignal/public-research/bce4bde34835a47bd1e0b7d2b6fb74cf3dc900eb/snapshots/pulse-v0-2026-08-04.json",
+          "transactionHash": "0x07529544dc8192347ce87e2cd795f3b60125ca2f957a68187e5f416b3766dde7",
+          "blockNumber": 55330697,
+          "blockHash": "0xe0165b7cbfa97b443a3d98907e89bf783580cadd7c051b773a3dfefb27d7fa31",
+          "publishedAtUtc": "2026-08-04T21:06:14Z",
+          "explorerUrl": "https://testnet.arcscan.app/tx/0x07529544dc8192347ce87e2cd795f3b60125ca2f957a68187e5f416b3766dde7"
         }
       }
     }
