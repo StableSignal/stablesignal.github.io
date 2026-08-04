@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="StableSignal build log 0003: verified Pulse observation history and checkpoint 0002 on Arc testnet.">
+  <meta name="theme-color" content="#0b0e11">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Build log 0003 - Pulse observation history">
+  <meta property="og:description" content="A deterministic Arc testnet capture, a second onchain checkpoint, and visible observation history in Pulse.">
+  <meta property="og:url" content="https://stablesignal.github.io/build-log/0003-pulse-observation-history.html">
+  <meta property="og:image" content="https://stablesignal.github.io/assets/brand/stablesignal-pulse-og-v1.png">
+  <meta property="og:image:width" content="1746">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="StableSignal Pulse public beta - Arc testnet, in view.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://stablesignal.github.io/assets/brand/stablesignal-pulse-og-v1.png">
+  <meta name="twitter:image:alt" content="StableSignal Pulse public beta - Arc testnet, in view.">
+  <title>Build log 0003: Pulse observation history - StableSignal</title>
+  <link rel="canonical" href="https://stablesignal.github.io/build-log/0003-pulse-observation-history.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="subpage">
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <a class="brand" href="../"><span class="mark" aria-hidden="true">&#9637;</span>StableSignal</a>
+  <nav aria-label="Primary"><a href="../#products">Products</a><a href="../#proof">Proof</a><a href="../#research">Research</a><a href="../#build-log">Build log</a><a class="nav-cta" href="../pulse/">Open Pulse</a></nav>
+</header>
+<main id="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">StableSignal</a><span aria-hidden="true">/</span><a href="../#build-log">Build log</a><span aria-hidden="true">/</span><span>0003</span></nav>
+  <article class="log-page">
+    <header class="log-page-head">
+      <div><p class="eyebrow"><span></span> Build log 0003</p><h1>Pulse observation history.</h1><p class="lede">Turning a second deterministic Arc testnet capture into a reproducible research record, an onchain checkpoint, and a visible product history.</p></div>
+      <dl class="record-meta"><div><dt>Status</dt><dd>Evidence verified</dd></div><div><dt>Network</dt><dd>Arc Testnet</dd></div><div><dt>Chain ID</dt><dd><code>5042002</code></dd></div><div><dt>Date</dt><dd><time datetime="2026-08-04">4 August 2026</time></dd></div></dl>
+    </header>
+
+    <section><h2>Objective</h2><p>Make Pulse freshness honest, preserve a repeatable public-beta observation, and connect the interface directly to the exact research bytes and their confirmed PulseBeacon event.</p></section>
+
+    <section><h2>Observation 0002</h2><div class="record-list"><div><span>Fixed window</span><strong>Blocks <code>55,329,690-55,329,709</code>, selected before capture and re-read at the same head.</strong></div><div><span>Activity</span><strong><code>149</code> transactions across <code>20</code> blocks; mean <code>7.45</code> per block.</strong></div><div><span>Gas utilization</span><strong><code>3.4%</code> from <code>20,183,559 / 600,000,000</code>, rounded to one decimal place.</strong></div><div><span>Reproduction</span><strong>The fixed-head second capture was byte-identical to the first.</strong></div></div></section>
+
+    <section><h2>Second snapshot checkpoint</h2><p>The commit-pinned Observation 0002 snapshot was published through PulseBeacon at block <code>55,330,697</code>. Transaction <code>0x07529544...66dde7</code> confirmed with receipt status <code>1</code> and emitted the expected SHA-256 digest and URI.</p><div class="text-links vertical"><a href="https://testnet.arcscan.app/tx/0x07529544dc8192347ce87e2cd795f3b60125ca2f957a68187e5f416b3766dde7" target="_blank" rel="noopener noreferrer">Verify checkpoint 0002 on ArcScan &nearr;</a><a href="https://raw.githubusercontent.com/StableSignal/public-research/bce4bde34835a47bd1e0b7d2b6fb74cf3dc900eb/snapshots/pulse-v0-2026-08-04.json" target="_blank" rel="noopener noreferrer">Open the commit-pinned snapshot &nearr;</a></div></section>
+
+    <section><h2>Product changes</h2><div class="record-list"><div><span>Observation history</span><strong>Pulse now displays both fixed captures with direct research, snapshot, and checkpoint links.</strong></div><div><span>Freshness language</span><strong>The observed block time is authoritative; scheduled publishing is described as periodic best-effort delivery.</strong></div><div><span>Address handoff</span><strong>Public wallet and contract checks continue into ArcScan without in-app identity or balance claims.</strong></div><div><span>Link safety</span><strong>External research and explorer references open in a new tab with opener isolation.</strong></div></div></section>
+
+    <section><h2>Release verification</h2><p>The Pulse TypeScript build, deterministic public-release manifest, and static smoke check passed. The assembled site was checked at desktop and mobile widths for both observation cards, the delayed-snapshot state, address handoff, keyboard-visible links, and safe external-tab behavior.</p></section>
+
+    <section><h2>What changed between the two samples</h2><p>Observation 0002 contains <code>27</code> fewer transactions than Observation 0001, a <code>15.3%</code> difference, while displayed window gas utilization moved from <code>5.2%</code> to <code>3.4%</code>. Two short testnet samples do not establish a trend, adoption measure, or production-performance claim.</p></section>
+
+    <section><h2>Related records</h2><div class="text-links vertical"><a href="../pulse/">Open Pulse &rarr;</a><a href="../products/pulse.html">Review the Pulse scope &rarr;</a><a href="https://github.com/StableSignal/public-research/blob/main/notes/0002-arc-testnet-observations.md" target="_blank" rel="noopener noreferrer">Read Observation 0002 &nearr;</a><a href="https://github.com/StableSignal/public-research/blob/main/methodology/pulse-v0-methodology.md" target="_blank" rel="noopener noreferrer">Read methodology v0.2 &nearr;</a><a href="https://testnet.arcscan.app/address/0x13FBc37C40d071d9654913013C93a63F9Dc770D3" target="_blank" rel="noopener noreferrer">Inspect PulseBeacon on ArcScan &nearr;</a></div></section>
+
+    <p class="notice"><strong>Independence notice:</strong> StableSignal is an independent project building on Arc testnet. We are not affiliated with, endorsed by, or sponsored by Circle or Arc.</p>
+  </article>
+</main>
+<footer>
+  <div><a class="brand" href="../"><span class="mark" aria-hidden="true">&#9637;</span>StableSignal</a><p>Stablecoin research, analytics, and migration tools.</p><p><a href="https://github.com/StableSignal/public-research" target="_blank" rel="noopener noreferrer">Public research</a> &middot; <a href="../products/pulse.html">Pulse scope</a></p></div>
+  <div><strong>Testnet notice</strong><p>Pulse reports Arc testnet activity. It does not represent mainnet conditions or production availability.</p><p>&copy; 2026 StableSignal &middot; Testnet research only</p></div>
+</footer>
+</body>
+</html>

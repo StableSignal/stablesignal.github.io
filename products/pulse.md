@@ -1,10 +1,10 @@
 # Pulse
 
-**Status:** Public beta on Arc testnet; first snapshot checkpoint published
+**Status:** Public beta on Arc testnet; two snapshot checkpoints published
 
 **Network:** Arc Testnet (`5042002`)
 
-Pulse is an Arc testnet activity dashboard and research interface. The public beta makes a small, automatically refreshed network snapshot easy to inspect and independently follow into block and transaction records.
+Pulse is an Arc testnet activity dashboard and research interface. The public beta makes a small, periodically refreshed network snapshot easy to inspect and independently follow into block and transaction records.
 
 The primary public scope is the formatted [`pulse.html`](pulse.html) page. This Markdown record remains available for repository review.
 
@@ -17,7 +17,8 @@ The release candidate covers:
 * a recent transaction feed;
 * validated wallet-address handoff to ArcScan;
 * validated contract-address handoff to ArcScan; and
-* outbound ArcScan references for independent inspection.
+* outbound ArcScan references for independent inspection; and
+* two fixed observations linked to their research notes, exact snapshot bytes, and PulseBeacon checkpoints.
 
 The [approved QA capture](../assets/screenshots/pulse-v0-2026-07-31.png) defines the visible release-candidate surface. Features not present in that capture are not represented as part of v0.
 
@@ -29,7 +30,7 @@ Pulse separates three layers:
 2. **Derived metrics:** calculations such as transaction totals or gas-utilization ratios, using definitions in the methodology.
 3. **Interpretation:** a clearly labeled research note that does not overstate a short testnet sample.
 
-See the [Pulse v0 methodology](https://github.com/StableSignal/public-research/blob/main/methodology/pulse-v0-methodology.md) and [Observation 0001](https://github.com/StableSignal/public-research/blob/main/notes/0001-arc-testnet-observations.md).
+See the [Pulse v0 methodology](https://github.com/StableSignal/public-research/blob/main/methodology/pulse-v0-methodology.md), [Observation 0001](https://github.com/StableSignal/public-research/blob/main/notes/0001-arc-testnet-observations.md), and [Observation 0002](https://github.com/StableSignal/public-research/blob/main/notes/0002-arc-testnet-observations.md).
 
 ## Public evidence gate
 
@@ -39,7 +40,7 @@ Pulse v0 was not advanced to public beta until the following items agreed:
 * the recorded network and capture window;
 * a verified PulseBeacon contract address;
 * its successful deployment transaction and ArcScan testnet URL;
-* the successful PulseBeacon checkpoint for the commit-pinned Observation 0001 snapshot; and
+* the successful PulseBeacon checkpoints for the commit-pinned Observation 0001 and Observation 0002 snapshots; and
 * the machine-readable [deployment registry](../deployments/arc-testnet.json).
 
 Those records now agree for the verified Arc testnet PulseBeacon deployment at [`0x13FBc37C40d071d9654913013C93a63F9Dc770D3`](https://testnet.arcscan.app/address/0x13FBc37C40d071d9654913013C93a63F9Dc770D3).
