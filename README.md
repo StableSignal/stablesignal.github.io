@@ -13,7 +13,7 @@ Primary routes:
 * `/` — StableSignal hub;
 * `/pulse/` — interactive Pulse public beta;
 * `/products/pulse.html` — formatted Pulse scope and limitations; and
-* `/build-log/0003-pulse-observation-history.html` — latest evidence and release record.
+* `/build-log/0004-validation-gates.html` — latest evidence and validation-gate record.
 
 External links in HTML must use `target="_blank"` with `rel="noopener noreferrer"`. Internal navigation stays in the current tab.
 
