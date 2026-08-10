@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="StableSignal build log 0004: a verified third Pulse source record, StableScore calibration gates, and MigrationKit operator-validation boundaries.">
+  <meta name="theme-color" content="#0b0e11">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Build log 0004 - Gates before expansion">
+  <meta property="og:description" content="Public evidence and explicit validation gates for Pulse, StableScore, MigrationKit, and the eventual AgentPay handoff.">
+  <meta property="og:url" content="https://stablesignal.github.io/build-log/0004-validation-gates.html">
+  <meta property="og:image" content="https://stablesignal.github.io/assets/brand/stablesignal-pulse-og-v1.png">
+  <meta property="og:image:width" content="1746">
+  <meta property="og:image:height" content="909">
+  <meta property="og:image:alt" content="StableSignal Pulse public beta - Arc testnet, in view.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://stablesignal.github.io/assets/brand/stablesignal-pulse-og-v1.png">
+  <meta name="twitter:image:alt" content="StableSignal Pulse public beta - Arc testnet, in view.">
+  <title>Build log 0004: Gates before expansion - StableSignal</title>
+  <link rel="canonical" href="https://stablesignal.github.io/build-log/0004-validation-gates.html">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="subpage">
+<a class="skip" href="#main">Skip to content</a>
+<header>
+  <a class="brand" href="../"><span class="mark" aria-hidden="true">&#9637;</span>StableSignal</a>
+  <nav aria-label="Primary"><a href="../#products">Products</a><a href="../#proof">Proof</a><a href="../#research">Research</a><a href="../#build-log">Build log</a><a class="nav-cta" href="../pulse/">Open Pulse</a></nav>
+</header>
+<main id="main">
+  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../">StableSignal</a><span aria-hidden="true">/</span><a href="../#build-log">Build log</a><span aria-hidden="true">/</span><span>0004</span></nav>
+  <article class="log-page">
+    <header class="log-page-head">
+      <div><p class="eyebrow"><span></span> Build log 0004</p><h1>Gates before expansion.</h1><p class="lede">A third reproducible Pulse source record, a stronger StableScore calibration base, and a precise MigrationKit validation boundary—without turning private experiments into launch claims.</p></div>
+      <dl class="record-meta"><div><dt>Status</dt><dd>Gates recorded</dd></div><div><dt>Network</dt><dd>Arc Testnet</dd></div><div><dt>Chain ID</dt><dd><code>5042002</code></dd></div><div><dt>Date</dt><dd><time datetime="2026-08-10">10 August 2026</time></dd></div></dl>
+    </header>
+
+    <section><h2>Objective</h2><p>Advance the evidence pipeline while keeping each product's status legible. Pulse has a new public source record; StableScore and MigrationKit remain private experiments with explicit gates; AgentPay remains intentionally queued behind them.</p></section>
+
+    <section><h2>Observation 0003 source record</h2><div class="record-list"><div><span>Fixed window</span><strong>Blocks <code>56,319,551-56,319,570</code>, selected once and re-read at the same head.</strong></div><div><span>Activity</span><strong><code>197</code> transactions across <code>20</code> blocks; mean <code>9.85</code> per block.</strong></div><div><span>Gas utilization</span><strong><code>8.8%</code> from <code>52,931,190 / 600,000,000</code>, rounded to one decimal place.</strong></div><div><span>Reproduction</span><strong>The fixed-head second capture was byte-identical, with SHA-256 <code>e0035c...57714</code>.</strong></div></div><p>The source bytes and research note are public. Pulse interface integration and a PulseBeacon checkpoint are still pending, so this is not represented as a third checkpointed observation.</p></section>
+
+    <section><h2>StableScore calibration</h2><div class="record-list"><div><span>Evidence chain</span><strong><code>29</code> contiguous hashed windows through block <code>56,320,502</code>, with zero gaps and <code>25</code> verified parent links.</strong></div><div><span>Elapsed evidence</span><strong><code>3.978056</code> natural observation days; no historical backfill.</strong></div><div><span>Reference coverage</span><strong>Two labeled public Arc contract references are active, satisfying the reference-diversity gate.</strong></div><div><span>Recent quality</span><strong>The latest <code>12</code> runs have complete token-log coverage.</strong></div></div><p>Three of four maturity gates are satisfied. The remaining requirement is seven natural observation days. No score, formula, wallet profile, or production-readiness claim is public.</p></section>
+
+    <section><h2>MigrationKit validation boundary</h2><p>The private, local-first wizard completed an internal representative workflow check, its <code>14</code>-test suite, demo generation, artifact hashing, and cross-link verification. A real operator still needs to run one sanitized workflow and confirm that the questions, outputs, and verifier are understandable without engineering assistance.</p><p>A possible MigrationReceiptRegistry has been documented as design-only. The current direction is a minimal, permissionless hash anchor that must never contain personally identifiable information, workflow names, URLs, scores, or private artifacts. No registry contract has been implemented or deployed, and an anchor would not prove approval, correctness, or migration completion.</p></section>
+
+    <section><h2>Why AgentPay remains queued</h2><p>AgentPay v0 begins only after StableScore reaches its seven-day evidence gate and MigrationKit passes a human operator-validation session. Keeping that dependency explicit prevents a new product surface from outrunning the evidence and operator feedback it depends on.</p></section>
+
+    <section><h2>Related records</h2><div class="text-links vertical"><a href="../pulse/">Open Pulse &rarr;</a><a href="../products/pulse.html">Review the Pulse scope &rarr;</a><a href="https://github.com/StableSignal/public-research/blob/main/notes/0003-arc-testnet-observations.md" target="_blank" rel="noopener noreferrer">Read Observation 0003 &nearr;</a><a href="https://raw.githubusercontent.com/StableSignal/public-research/e22b124f6b50208586c6b4133f687586e0043f41/snapshots/pulse-v0-2026-08-10.json" target="_blank" rel="noopener noreferrer">Open the commit-pinned source bytes &nearr;</a><a href="https://github.com/StableSignal/public-research/blob/main/methodology/pulse-v0-methodology.md" target="_blank" rel="noopener noreferrer">Read methodology v0.2 &nearr;</a><a href="https://docs.arc.io/arc/references/contract-addresses" target="_blank" rel="noopener noreferrer">Review the official Arc contract registry &nearr;</a></div></section>
+
+    <p class="notice"><strong>Independence notice:</strong> StableSignal is an independent project building on Arc testnet. We are not affiliated with, endorsed by, or sponsored by Circle or Arc.</p>
+  </article>
+</main>
+<footer>
+  <div><a class="brand" href="../"><span class="mark" aria-hidden="true">&#9637;</span>StableSignal</a><p>Stablecoin research, analytics, and migration tools.</p><p><a href="https://github.com/StableSignal/public-research" target="_blank" rel="noopener noreferrer">Public research</a> &middot; <a href="../products/pulse.html">Pulse scope</a></p></div>
+  <div><strong>Testnet notice</strong><p>Pulse reports Arc testnet activity. It does not represent mainnet conditions or production availability.</p><p>&copy; 2026 StableSignal &middot; Testnet research only</p><p class="operator-credit">A Hexray Engineering Project</p></div>
+</footer>
+</body>
+</html>
