@@ -129,6 +129,7 @@ td small { color: var(--muted); }
 footer { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; margin-top: 120px; padding: 48px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font-size: .72rem; }
 footer .brand { color: var(--text); font-size: .9rem; }
 footer div > p { margin-top: 14px; }
+footer .operator-credit { margin-top: 9px; color: #647078; font-size: .62rem; letter-spacing: .06em; text-transform: uppercase; }
 :focus-visible { outline: 2px solid var(--green); outline-offset: 4px; }
 
 /* Formatted product and build-log pages */
