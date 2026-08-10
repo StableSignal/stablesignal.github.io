@@ -31,8 +31,18 @@ import{r as e,t}from"./secp256k1-BNHPt8Gq.js";import{$ as n,$t as r,A as i,At as
     </section>
 
     <section class="panel observation-panel" aria-labelledby="observation-heading">
-      <div class="panel-head"><div><p class="eyebrow">VERIFIED RECORD</p><h2 id="observation-heading">Observation history</h2></div><span>2 fixed captures</span></div>
-      <div class="observation-grid" data-observation-count="2">
+      <div class="panel-head"><div><p class="eyebrow">VERIFIED RECORD</p><h2 id="observation-heading">Observation history</h2></div><span>3 fixed captures</span></div>
+      <div class="observation-grid" data-observation-count="3">
+        <article class="observation-card">
+          <div class="observation-meta"><span>Observation 0003</span><time datetime="2026-08-10">10 AUG 2026</time></div>
+          <h3>197 transactions &middot; 20 blocks</h3>
+          <p>Blocks 56,319,551-56,319,570 &middot; 8.8% window gas utilization.</p>
+          <div class="observation-links">
+            <a href="https://github.com/StableSignal/public-research/blob/main/notes/0003-arc-testnet-observations.md" target="_blank" rel="noopener noreferrer">Research note &nearr;</a>
+            <a href="https://raw.githubusercontent.com/StableSignal/public-research/e22b124f6b50208586c6b4133f687586e0043f41/snapshots/pulse-v0-2026-08-10.json" target="_blank" rel="noopener noreferrer">Snapshot &nearr;</a>
+            <a href="https://testnet.arcscan.app/tx/0x9d044e2a8fa39abd85d48114971adac4e78f08e4c323b086bb952931afba6c5c" target="_blank" rel="noopener noreferrer">Checkpoint &nearr;</a>
+          </div>
+        </article>
         <article class="observation-card">
           <div class="observation-meta"><span>Observation 0002</span><time datetime="2026-08-04">04 AUG 2026</time></div>
           <h3>149 transactions &middot; 20 blocks</h3>

@@ -69,7 +69,7 @@
         <div class="meta"><span>01</span><b class="tag live">PUBLIC BETA</b></div>
         <h3>Pulse</h3>
         <p>A periodically refreshed Arc testnet snapshot for inspecting recent blocks, transactions, gas use, and explorer-linked addresses. Its methodology, fixed observations, and PulseBeacon checkpoint evidence are public.</p>
-        <ul><li>Best-effort testnet snapshots</li><li>Three fixed source records</li><li>Explorer-linked public evidence</li></ul>
+        <ul><li>Best-effort testnet snapshots</li><li>Three fixed observations</li><li>Explorer-linked public evidence</li></ul>
         <div class="product-actions"><a href="pulse/">Open Pulse →</a><a href="products/pulse.html">Review the formatted scope →</a></div>
       </article>
       <article class="product"><div class="meta"><span>02</span><b class="tag">PRIVATE</b></div><h3>StableScore</h3><p>Private experimental Arc testnet activity-profile methodology is accumulating forward evidence. No scores are public.</p></article>
@@ -85,7 +85,7 @@
       <article><i>IMG</i><h3>Pulse screenshot</h3><p>A dated release-candidate view of blocks <code>54,646,222–54,646,241</code> on Arc testnet.</p><a class="verified" href="assets/screenshots/pulse-v0-2026-07-31.png">View captured evidence →</a></article>
       <article><i>ADR</i><h3>Contract address</h3><p>The verified PulseBeacon address on Arc testnet.</p><a class="verified" href="https://testnet.arcscan.app/address/0x13FBc37C40d071d9654913013C93a63F9Dc770D3" target="_blank" rel="noopener noreferrer">0x13FB…770D3 →</a></article>
       <article><i>TX</i><h3>Transaction hash</h3><p>The successful deployment transaction for independent review.</p><a class="verified" href="https://testnet.arcscan.app/tx/0x34294c78a7062f1088724d2017149d2531c6a522c666304c09e950694338ebf0" target="_blank" rel="noopener noreferrer">0x34294c…8ebf0 →</a></article>
-      <article><i>CHK</i><h3>Latest checkpoint</h3><p>Observation 0002's exact snapshot digest was published through PulseBeacon.</p><a class="verified" href="https://testnet.arcscan.app/tx/0x07529544dc8192347ce87e2cd795f3b60125ca2f957a68187e5f416b3766dde7" target="_blank" rel="noopener noreferrer">Review checkpoint 0002 →</a></article>
+      <article><i>CHK</i><h3>Latest checkpoint</h3><p>Observation 0003's exact snapshot digest was published through PulseBeacon.</p><a class="verified" href="https://testnet.arcscan.app/tx/0x9d044e2a8fa39abd85d48114971adac4e78f08e4c323b086bb952931afba6c5c" target="_blank" rel="noopener noreferrer">Review checkpoint 0003 →</a></article>
     </div>
     <p class="notice"><strong>Testnet notice:</strong> Arc and Circle are referenced only as third-party network and ecosystem context. StableSignal is independent and is not affiliated with, endorsed by, or sponsored by Circle or Arc.</p>
   </section>
@@ -94,7 +94,7 @@
     <div class="heading"><div><p class="eyebrow">Research record</p><h2>Methods before conclusions.</h2></div><p>Pulse separates collection method, observed testnet data, and interpretation so readers can judge each layer independently.</p></div>
     <div class="research">
       <article><i>METHOD</i><h3>Pulse v0 methodology</h3><p>Definitions, deterministic capture procedure, reproducibility fields, delivery constraints, and known limitations.</p><b class="ready">Method v0.2</b><a href="https://github.com/StableSignal/public-research/blob/main/methodology/pulse-v0-methodology.md" target="_blank" rel="noopener noreferrer">Read the methodology →</a></article>
-      <article><i>NOTE</i><h3>Pulse observations</h3><p>Three deterministic 20-block source captures are public. The first two are checkpointed; Observation 0003 is source-verified with its checkpoint pending.</p><b class="ready">Source 0003 verified</b><a href="https://github.com/StableSignal/public-research/blob/main/notes/0003-arc-testnet-observations.md" target="_blank" rel="noopener noreferrer">Review Observation 0003 →</a></article>
+      <article><i>NOTE</i><h3>Pulse observations</h3><p>Three deterministic 20-block captures are public, integrated into Pulse, and independently checkpointed through PulseBeacon.</p><b class="ready">Checkpoint 0003 verified</b><a href="https://github.com/StableSignal/public-research/blob/main/notes/0003-arc-testnet-observations.md" target="_blank" rel="noopener noreferrer">Review Observation 0003 →</a></article>
       <article><i>JSON</i><h3>Deployment registry</h3><p>A machine-readable record for contract address, transaction, block, time, and verification checks.</p><b class="ready">Evidence verified</b><a href="deployments/arc-testnet.json">Open the registry →</a></article>
     </div>
   </section>
@@ -115,7 +115,7 @@
     <div class="logs">
       <article class="log">
         <div class="log-id"><b>LOG 0004</b><time datetime="2026-08-10">10 AUG 2026</time></div>
-        <div class="log-body"><div class="meta"><h3>Gates before expansion</h3><b class="tag live">GATES RECORDED</b></div><p>A third fixed source capture is verified, StableScore's reference gate is satisfied, and MigrationKit's human-validation boundary is explicit.</p><div class="checklist"><div><span>StableScore evidence</span><code>29 CONTIGUOUS WINDOWS</code></div><div><span>Active labeled references</span><code>2 · GATE PASSED</code></div><div><span>Observation 0003</span><code>SOURCE VERIFIED · CHECKPOINT PENDING</code></div><div><span>MigrationKit</span><code>OPERATOR VALIDATION PENDING</code></div></div><a href="build-log/0004-validation-gates.html">Read build log 0004 →</a></div>
+        <div class="log-body"><div class="meta"><h3>Gates before expansion</h3><b class="tag live">GATES RECORDED</b></div><p>A third fixed capture is integrated and checkpointed, StableScore's reference gate is satisfied, and MigrationKit's human-validation boundary is explicit.</p><div class="checklist"><div><span>StableScore evidence</span><code>29 CONTIGUOUS WINDOWS</code></div><div><span>Active labeled references</span><code>2 · GATE PASSED</code></div><div><span>Observation 0003</span><code>INTEGRATED · CHECKPOINT VERIFIED</code></div><div><span>MigrationKit</span><code>OPERATOR VALIDATION PENDING</code></div></div><a href="build-log/0004-validation-gates.html">Read build log 0004 →</a></div>
       </article>
       <article class="log">
         <div class="log-id"><b>LOG 0003</b><time datetime="2026-08-04">04 AUG 2026</time></div>
