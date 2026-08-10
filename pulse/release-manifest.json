@@ -10,14 +10,14 @@
       "sha256": "6563fbc3fa19629ca6f44612f3987d4a08ceb3f1529f37d6cb1130ec2e146d7f"
     },
     {
+      "path": "assets/index-BclAfPbV.js",
+      "bytes": 133190,
+      "sha256": "af2ee7fe02ce5155e345b283bd61a5a78365b70e46563e4efa88394bbe39b3d9"
+    },
+    {
       "path": "assets/index-BhLOtj2R.css",
       "bytes": 8291,
       "sha256": "6112e0296c572ff98c138ea221c3dd0996ce185f6a77dbc9f52acf402b32c4c0"
-    },
-    {
-      "path": "assets/index-CzmCsNGt.js",
-      "bytes": 132212,
-      "sha256": "9e1764f6adeb9fbfe5887ead3468f1321d58a36c2e1e6d78662aef132c36cf0e"
     },
     {
       "path": "assets/localBatchGatewayRequest-DlCigo_h.js",
@@ -37,7 +37,7 @@
     {
       "path": "index.html",
       "bytes": 1805,
-      "sha256": "5dba72f823eb9395c6e4356855038478319e37b00c1770c95fef874c24aab588"
+      "sha256": "b4c46c0ba22932fd0ba6e4e306afffce1cb06959970ba6fddcac35d1814324b9"
     },
     {
       "path": "latest.json",
